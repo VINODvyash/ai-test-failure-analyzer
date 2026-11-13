@@ -1,0 +1,7 @@
+from playwright.sync_api import Page
+
+
+def test_open_website(page: Page):
+    page.goto("https://demowebshop.tricentis.com/")
+
+    assert "Demo Web Shop" in page.title()

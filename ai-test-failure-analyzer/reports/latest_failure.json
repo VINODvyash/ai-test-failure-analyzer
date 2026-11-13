@@ -1,0 +1,5 @@
+{
+    "test_name": "tests/test_demo.py::test_open_website[chromium]",
+    "outcome": "failed",
+    "longrepr": "page = <Page url='https://www.amazon.in/'>\n\n    def test_open_website(page: Page):\n        # page.goto(\"https://demowebshop.tricentis.com/\")\n        page.goto(\"https://www.amazon.in/\")\n    \n        #assert \"Demo Web Shop\" in page.title()\n>       assert \"Amazon Shopping\" in page.title()\nE       AssertionError: assert 'Amazon Shopping' in ''\nE        +  where '' = title()\nE        +    where title = <Page url='https://www.amazon.in/'>.title\n\ntests\\test_demo.py:9: AssertionError"
+}
